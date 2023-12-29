@@ -1,7 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import { useAuthState } from "react-firebase-hooks/auth";
+import {myAuth} from "./auth/myFirebase"
+
+import {
+  getAuth,
+  GoogleAuthProvider,
+  signInWithPopup,
+  signOut,
+} from "firebase/auth";
+
+
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
